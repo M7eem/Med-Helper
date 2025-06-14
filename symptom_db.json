@@ -1,0 +1,49 @@
+{
+    "fever,cough,sore throat": {
+        "conditions": [
+            "Flu",
+            "Common Cold",
+            "COVID-19"
+        ],
+        "triage": "See a doctor if fever persists >3 days or severe symptoms appear",
+        "tips": "Rest, hydration, paracetamol for fever",
+        "sources": [
+            "CDC",
+            "Mayo Clinic"
+        ]
+    },
+    "chest pain,sweating,nausea": {
+        "conditions": [
+            "Heart Attack",
+            "Angina"
+        ],
+        "triage": "Emergency care immediately",
+        "tips": "Call emergency services, stay calm and still",
+        "sources": [
+            "American Heart Association"
+        ]
+    },
+    "headache,nausea,sensitivity to light": {
+        "conditions": [
+            "Migraine",
+            "Tension Headache"
+        ],
+        "triage": "Self-care or primary doctor if frequent",
+        "tips": "Dark room, hydration, OTC pain relievers",
+        "sources": [
+            "NHS UK"
+        ]
+    },
+    "abdominal pain,diarrhea,vomiting": {
+        "conditions": [
+            "Gastroenteritis",
+            "Food Poisoning"
+        ],
+        "triage": "Doctor if symptoms persist >2 days or signs of dehydration",
+        "tips": "Oral rehydration, bland diet, rest",
+        "sources": [
+            "WHO",
+            "CDC"
+        ]
+    }
+}

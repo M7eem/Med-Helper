@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "symptom-checker"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Hu <kevinhuwest@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^3.1.4"
+tqdm = "^4.54.1"
+ujson = "^4.0.1"
+en_core_sci_sm = { url = "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_sm-0.3.0.tar.gz" } # the English language model for SpaCy
+spacy = "^2.3.5"
+scispacy = "^0.3.0"
+gunicorn = "^20.0.4"
+django-heroku = "^0.3.1"
+Pattern = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+stackprinter = "^0.2.5"
+black = "^20.8b1"
+isort = "^5.6.4"
+pylint = "^2.6.0"
+poethepoet = "^0.9.0"
+mypy = "^0.790"
+ipython = "^7.19.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.poe.tasks]
+black = "black ./symptom_checker"
+isort = "isort ./symptom_checker"
+format = ["black","isort"]
+lint = "pylint ./symptom_checker"
